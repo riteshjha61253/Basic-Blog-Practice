@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);;
+}
+.container{
+    max-width: 66vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.headcontain{
+    margin-bottom: 2.8rem;
+}
+.headtitle{
+    margin-bottom: 1.7rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.headcontain p{
+    max-width: 100%;
+    text-align: center;
+    color: rgb(83, 70, 70);
+    /* margin-left: 430px; */
+}
+.maincontain{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1,1fr);
+
+}
+@media (min-width:650px){
+    .maincontain{
+        grid-template-columns: repeat(2,1fr);
+    }}
+    @media (min-width:1080px){
+    .maincontain{
+        grid-template-columns: repeat(3,1fr);
+    }}
+    @media (min-width:1340px){
+    .maincontain{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.card{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(66, 62, 62);
+    border-radius: 8px;
+}
+.cardimage{
+    position: relative;
+    overflow: hidden;
+    height: 7rem;
+    }
+    @media (min-width:768px) {
+        .cardimage{
+            height: 12rem;
+        }
+    }
+.cardimages{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.cardtitle{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+}
+.card:hover .cardimage{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.cardtitle{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: rgb(50, 42, 42);
+}
+.anchor:hover .cotit{
+    color: rgb(48, 48, 195);
+}
+.title{
+    color: rgb(61, 55, 55);
+    font-size: 1rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.auth_avatar{
+    height:2.5rem ;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 50%;
+    background-color: rgb(61, 49, 49);
+}
+.auth_avatar img{
+    height: 2.5rem ;
+    width: 2.5rem;
+}
+.authinfo{
+    display: flex;
+    flex-direction: column;
+}
+.in1{
+    color: blue;
+}
+.in2{
+    color: rgb(83, 71, 71);
+}
+.cardtag{
+    font-size: 0.8rem;
+    border: 1px solid rgb(76, 71, 71);
+    border-radius: 2px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: gray;
+
+}
